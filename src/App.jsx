@@ -1,16 +1,14 @@
-import useDate from "./useDate";
+import useCustomPointer from "./useCustomPointer";
 
 function App() {
-  const { date, time } = useDate();
+  const customPointer = useCustomPointer("🔥");
 
   return (
     <div>
-      <h1>Data e ora attuali:</h1>
-      <p>Data: {date}</p>
-      <p>Ora: {time}</p>
+      <h1>Sposta il mouse per vedere il cursore personalizzato!</h1>
+      {customPointer}
     </div>
   );
 }
 
 export default App;
-
